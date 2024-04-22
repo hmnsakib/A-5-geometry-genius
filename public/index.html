@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geonetry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header section -->
+    <header class="w-11/12 mx-auto bg-sky-100 md:flex mt-12 justify-between px-12 py-4">
+        <div>
+            <h1 class="text-5xl font-bold">Interactive</h1>
+            <h2 class="text-3xl font-medium ">Geometry Genius</h3>
+        </div>
+        <button id="btn-blog" class="w-32 h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg">Blog</button>
+    </header>
+
+    <!-- main sectioin -->
+    <main class="w-11/12 mx-auto mt-12 md:flex gap-6">
+
+        <!-- section left -->
+        <section class="w-3/4 grid md:grid-cols-3 gap-6 mx-auto">
+            <!-- card 1 -->
+            <div class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/triangle.png" alt="">
+                    <h1 id="triangle" class="text-2xl font-bold mt-12">Triangle</h1>
+                    <p class="my-3">Area (A) = 0.5 X b X h</p>
+                </div>
+                <div>
+                    <input id="card-1-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="b"><span class="m-3">cm</span>
+                    <input id="card-1-input-2" class="h-8 w-24 bg-gray-100 p-2" type="text" placeholder="h"><span class="m-3">cm</span>
+                </div>
+                <button id="btn-card1" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button> 
+            </div>
+            <!-- card 2 -->
+            <div class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/rectangle.png" alt="">
+                    <h1 class="text-2xl font-bold mt-12">Ractangle</h1>
+                    <p class="my-3">Area (A) = W X I</p>
+                </div>
+                <div>
+                    <input id="card-2-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="W"><span class="m-3">cm</span>
+                    <input id="card-2-input-2" class="h-8 w-24 bg-gray-100 p-2" type="text" placeholder="I"><span class="m-3">cm</span>
+                </div>
+                <button id="btn-card2" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button> 
+            </div>
+            <!-- card 3 -->
+            <div  class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/parallelogram.png" alt="">
+                    <h1 class="text-2xl font-bold mt-12">Parallelogram</h1>
+                    <p class="my-3">Area (A) = b X h</p>
+                </div>
+                <div>
+                    <input id="card-3-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="b"><span class="m-3">cm</span>
+                    <input id="card-3-input-2" class="h-8 w-24 bg-gray-100 p-2" type="text" placeholder="h"><span class="m-3">cm</span>
+                </div>
+                <button id="btn-card3" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button> 
+            </div>
+            <!-- card 4 -->
+            <div class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/rhombus.png" alt="">
+                    <h1 class="text-2xl font-bold mt-12">Rhombus</h1>
+                    <p class="my-3">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                </div>
+                <div>
+                    <input id="card-4-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="d1"><span class="m-3">cm</span>
+                    <input id="card-4-input-2" class="h-8 w-24 bg-gray-100 p-2" type="text" placeholder="d2"><span class="m-3">cm</span>     
+                </div>
+                <button id="btn-card4" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button> 
+            </div>
+            <!-- card 5 -->
+            <div class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/pentagon.png" alt="">
+                    <h1 class="text-2xl font-bold mt-12">Pentagon</h1>
+                    <p class="my-3">Area (A) = 0.5 X p X b</p>
+                </div>
+                <div>
+                    <input id="card-5-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="p"><span class="m-3">cm</span>
+                    <input id="card-5-input-2" class="h-8 w-24 bg-gray-100 p-2" type="text" placeholder="b"><span class="m-3">cm</span>
+                </div>
+                <button id="btn-card5" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button> 
+            </div>
+            <!-- card 6 -->
+            <div class="border border-gray-400 p-12 justify-items-center text-center">
+                <div>
+                    <img class="h-48 mx-auto" src="images/ellipse.png" alt="">
+                    <h1 class="text-2xl font-bold mt-12">Ellipse</h1>
+                    <p class="my-3">Area (A) = &pi;r<sup>2</sup></p>
+                </div>
+                <div>
+                    <input id="card-6-input-1" class="mb-3 h-8 w-24 bg-gray-100 p-2" type="text" placeholder="r"><span class="m-3">cm</span>
+                </div>
+                <button id="btn-card6" class="w-full h-12 bg-sky-600 text-white text-xl font-bold my-auto rounded-lg mt-12">Calculate</button>
+            </div>
+        </section>
+
+        <!-- section right -->
+        <section class="w-3/4 mx-auto mt-6 md:mt-0 md:w-1/4">
+            <div class="border border-gray-400 p-4">
+                <h1 class="text-2xl font-bold text-center"><u>Area Calculation</u></h1>
+                <div class="area-results">
+                    <!-- triangel result -->
+                    <div id="triangel-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-1">0.</p>
+                            <p>Triangle</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    <!-- ractangle result -->
+                    <div id="ractangle-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-2">0.</p>
+                            <p>Ractangle</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    <!-- parallelogram result -->
+                    <div id="parallelogram-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-3">0.</p>
+                            <p>Parallelogram</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    <!-- rhombus result -->
+                    <div id="rhombus-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-4">0.</p>
+                            <p>Rhombus</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    <!-- pentagon result -->
+                    <div id="pentagon-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-5">0.</p>
+                            <p>Pentagon</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    <!-- ellipse result -->
+                    <div id="ellipse-result" class="my-2 grid-cols-3 items-center hidden">
+                        <div class="flex gap-3">
+                            <p id="serial-number-6">0.</p>
+                            <p>Ellipse</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p>12</p><span class="">cm<sup>2</sup></span>
+                        </div>
+                        <button class="p-2 bg-sky-600 text-white rounded">Convert to m<sup>2</sup></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- js script -->
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
